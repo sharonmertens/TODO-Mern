@@ -85,7 +85,31 @@ onSubmit(e) {
                     />
           </div>
 
-          
+          <div className="form-group">
+            <div className="form-check form-check-inline">
+              <input  className="form-check-input"
+                      type="radio"
+                      name="priorityOptions"
+                      id="priorityLow"
+                      value="low"
+                      checked={this.state.todo_priority==='Low'}
+                      onChange={this.onChangeTodoPriority}
+                      />
+                <label className="form-check-label">Low</label>
+            </div>
+            <div className="form-check form-check-inline">
+              <input  className="form-check-input"
+                      type="radio"
+                      name="priorityOptions"
+                      id="priorityMedium"
+                      value="medium"
+                      checked={this.state.todo_priority==='Medium'}
+                      onChange={this.onChangeTodoPriority}
+                      />
+              <label className="form-check-label">Medium</label>
+            </div>
+          </div>
+
         </form>
       </div>
     )
