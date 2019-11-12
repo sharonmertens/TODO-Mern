@@ -15,7 +15,7 @@ class App extends Component {
       <Router>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="https://codingthesmartway.com" target="_blank">
+            <a className="navbar-brand" href="https://codingthesmartway.com" target="_blank">
 
             </a>
             <Link to="/" className="navbar-brand">MERN-Stack Todo App</Link>
@@ -31,7 +31,7 @@ class App extends Component {
             </div>
           </nav>
           <br/>
-          
+
           <Route path="/" exact component={TodosList} />
           <Route path="/edit/:id" component={EditTodo} />
           <Route path="/create" component={CreateTodo} />
